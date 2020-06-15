@@ -139,9 +139,6 @@ main section:nth-of-type(1) p {
     cursor: pointer;
     transition: all 1s;
     clip-path: polygon(30% 32%, 69% 32%, 69% 97%, 30% 97%);
-
-
-
 }
 
 .full-image {
@@ -273,6 +270,8 @@ main section:nth-of-type(1) p {
     top: 50%;
     border: none;
     background-color: transparent;
+    width: 20px;
+    height: 20px;
 }
 
 .second-section button:before {
@@ -314,7 +313,7 @@ main section:nth-of-type(1) p {
 
 .swing {
     animation: swing ease-in-out 1s infinite alternate;
-    transform-origin: top -20px;
+    transform-origin: center -20px;
     position: relative;
     display: block;
     z-index: 5;
@@ -331,7 +330,124 @@ main section:nth-of-type(1) p {
     z-index: 5;
     display: block;
     left: 40px;
-    bottom: 0;
+    bottom: 70px;
 }
+
+button:focus{
+    outline: none;
+ }
+
+.world {
+    background-color: #B0C6E2;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+    overflow: hidden;
+}
+
+.fourth-img {
+    position: absolute;
+    margin: 0 auto;
+    left: 1px;
+    right: 1px;
+    width: 450px;
+    bottom: 80px;
+}
+
+.fourth-h2 {
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+    z-index: 1;
+    margin: 0 auto;
+    left: 1px;
+    right: 1px;
+    text-align: center;
+}
+
+.orange-buttons {
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    animation: scale ease-in-out 2s infinite alternate;
+}
+
+@keyframes scale {
+    0% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+}
+
+.st0:hover {
+    fill: #F9DADF;
+}
+
+.st0:focus {
+    fill: #F9DADF;
+}
+
+.one {
+    position: absolute;
+    top: 230px;
+    left: 445px;
+    z-index: 1;
+}
+
+.two {
+    position: absolute;
+    top: 200px;
+    left: 580px;
+    z-index: 1;
+}
+
+.three {
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    z-index: 1;
+}
+
+.four {
+    position: absolute;
+    top: 300px;
+    left: 625px;
+    z-index: 1;
+}
+
+.five {
+    position: absolute;
+    top: 250px;
+    left: 685px;
+    z-index: 1;
+}
+
+.six {
+    position: absolute;
+    top: 290px;
+    left: 720px;
+    z-index: 1;
+}
+
+.seven {
+    position: absolute;
+    top: 230px;
+    left: 740px;
+    z-index: 1;
+}
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
 
 

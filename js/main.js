@@ -11,17 +11,38 @@ var secondImage = document.querySelector(".second-img");
 var div = document.querySelector(".second-section div:nth-of-type(2)")
 var div2 = document.querySelector(".second-section div:nth-of-type(1)")
 var backButton = document.querySelector(".second-section button")
-var img = document.querySelector('.second-img')
 
 secondImage.addEventListener("click", function(){
-    img.classList.add("full-image")
+    secondImage.classList.add("full-image")
     div.classList.add('animate')
     div2.classList.add('appear')
     backButton.classList.add("show")
 })
 backButton.addEventListener('click', function(){
-    img.classList.remove("full-image")
+    secondImage.classList.remove("full-image")
     div.classList.remove('animate')
     div2.classList.remove('appear')
     backButton.classList.remove("show")
 })
+
+console.log(window.innerWidth)
+
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });

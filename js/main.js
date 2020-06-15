@@ -25,6 +25,32 @@ backButton.addEventListener('click', function(){
     backButton.classList.remove("show")
 })
 
+var thirdImage = document.querySelector(".third-img")
+var backButton2 = document.querySelector(".third-btn")
+var balerina = document.querySelector(".ballet")
+var div3 = document.querySelector(".dream div:nth-of-type(2)")
+var div4 = document.querySelector(".dream div:nth-of-type(1)")
+var thirdH2 = document.querySelector(".third-h2")
+
+thirdImage.addEventListener("click", function(){
+    thirdImage.classList.add("full-image")
+    balerina.src="images/balerina.gif"
+    balerina.classList.add("balerina")
+    thirdH2.classList.add("third-h2-open")
+    div3.classList.add('animate')
+    div4.classList.add('appear')
+    backButton2.classList.add("show")
+})
+backButton2.addEventListener('click', function(){
+    thirdImage.classList.remove("full-image")
+    balerina.src="images/ballet.png"
+    balerina.classList.remove("balerina")
+    thirdH2.classList.remove("third-h2-open")
+    div3.classList.remove('animate')
+    div4.classList.remove('appear')
+    backButton2.classList.remove("show")
+})
+
 console.log(window.innerWidth)
 
 

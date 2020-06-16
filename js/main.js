@@ -52,6 +52,7 @@ thirdImage.addEventListener("click", function(){
     div3.classList.add('animate')
     div4.classList.add('appear')
     backButton2.classList.add("show")
+    thirdImage.src="images/girl2.png"
 })
 backButton2.addEventListener('click', function(){
     logo.classList.remove("hide")
@@ -64,6 +65,7 @@ backButton2.addEventListener('click', function(){
     div3.classList.remove('animate')
     div4.classList.remove('appear')
     backButton2.classList.remove("show")
+    thirdImage.src="images/girl.png"
 })
 
 console.log(window.innerWidth)
@@ -96,20 +98,39 @@ backButtonCoton.addEventListener('click', function(){
 })
 
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml6 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// var textWrapper = document.querySelector('.ml6 .letters');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml6 .letter',
-    translateY: ["1.1em", 0],
-    translateZ: 0,
-    duration: 750,
-    delay: (el, i) => 50 * i
-  }).add({
-    targets: '.ml6',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+// anime.timeline({loop: true})
+//   .add({
+//     targets: '.ml6 .letter',
+//     translateY: ["1.1em", 0],
+//     translateZ: 0,
+//     duration: 750,
+//     delay: (el, i) => 50 * i
+//   }).add({
+//     targets: '.ml6',
+//     opacity: 0,
+//     duration: 1000,
+//     easing: "easeOutExpo",
+//     delay: 1000
+//   });
+
+
+  function inView() {
+    var element = document.querySelectorAll("main .center-container");
+    var windowHeight = window.innerHeight;
+    var scrollY = window.scrollY || window.pageYOffset;
+    var scrollPosition = scrollY + windowHeight;
+    for (var i = 0; i < element.length; i++) {
+      var elementPosition = element[i].getBoundingClientRect().top + scrollY + element[i].clientHeight;
+      if (scrollPosition > elementPosition) {
+        element[i].classList.add("in-view");
+      }else if(scrollPosition < elementPosition){
+        element[i].classList.remove("in-view"); 
+      }
+    }
+  }
+  
+  inView();
+  document.querySelector("main").addEventListener("scroll", inView);

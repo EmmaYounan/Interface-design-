@@ -267,7 +267,7 @@ main section:nth-of-type(1) p {
 
 .second-section div:nth-of-type(2).animate h2 {
     text-align: center;
-    bottom: 0;
+    bottom: 70px;
     width: 8em;
     margin: 0 auto;
     left: 1px;
@@ -330,7 +330,7 @@ main section:nth-of-type(1) p {
     transition: all 1s;
     position: absolute;
     width: 15em;
-    top: -10em;
+    top: -12em;
     right: 175px;
     z-index: 1;
     display: block;
@@ -349,7 +349,7 @@ main section:nth-of-type(1) p {
     100% { transform: rotate(-3deg); }
 }
 
-.third-h2 {
+/* .third-h2 {
     width: 100%;
     transition: all 1s;
     text-align: left;
@@ -358,7 +358,7 @@ main section:nth-of-type(1) p {
     display: block;
     left: 40px;
     bottom: 70px;
-}
+} */
 
 button:focus{
     outline: none;
@@ -381,7 +381,7 @@ button:focus{
     width: 450px;
 }
 
-.fourth-h2 {
+/* .fourth-h2 {
     width: 100%;
     position: absolute;
     bottom: 70px;
@@ -390,7 +390,7 @@ button:focus{
     left: 1px;
     right: 1px;
     text-align: center;
-}
+} */
 
 .orange-buttons {
     background-color: transparent;
@@ -525,7 +525,7 @@ button:focus svg .st0 {
 
 .wave {
     position: absolute;
-    bottom: -85px;
+    bottom: -133px;
     right: 1px;
     left: 1px;
     margin: 0 auto;
@@ -560,7 +560,7 @@ button:focus svg .st0 {
     top: 120px
 }
 
-.fifth-h2 {
+/* .fifth-h2 {
     width: 100%;
     position: absolute;
     bottom: 70px;
@@ -569,7 +569,7 @@ button:focus svg .st0 {
     left: 1px;
     right: 1px;
     text-align: center;
-}
+} */
 
 .wings {
     position: absolute;
@@ -685,4 +685,91 @@ footer p:nth-of-type(2){
     font-size: 1em;
     padding-right: 40px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+    transition: all 1s;
+    width: 100%;
+    position: absolute;
+    bottom: -300px;
+    z-index: 999999;
+    margin: 0 auto;
+    left: 1px;
+    right: 1px;
+    text-align: center;
+}
+
+.center-container{
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 50%;
+    margin: 0 auto;
+}
+
+.in-view .center{
+    transition: all 1s;
+    bottom: -230px;
+}
+
+.scroll-down {
+    border: 5px solid black;
+    height: 50px;
+    width: 20px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    position: relative;
+}
+
+.point {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 5px;
+    animation-name: scrollDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scrollDown{
+    0% {
+        top: 5px;
+        opacity: 1;
+    }
+    100% {
+        top: 32px;
+        opacity: 0;
+    }
+}
+
+.up-down {
+    transform: translateY(3px);
+    animation-name: upDown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(3px);
+    }
+    50% {
+        transform: translateY(23px);
+    }
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+.glasses:hover {
+    fill: #F9DADF;
 }

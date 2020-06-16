@@ -393,49 +393,49 @@ button:focus{
     position: absolute;
     top: 121px;
     left: 32px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .two {
     position: absolute;
     top: 100px;
     left: 170px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .three {
     position: absolute;
     top: 150px;
     left: 180px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .four {
     position: absolute;
     top: 188px;
     left: 224px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .five {
     position: absolute;
     top: 150px;
     left: 270px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .six {
     position: absolute;
     top: 200px;
     left: 296px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .seven {
     position: absolute;
     top: 140px;
     left: 333px;
-    z-index: 1;
+    z-index: 2;
 }
   
   .ml6 .text-wrapper {
@@ -473,4 +473,61 @@ button:focus{
     left: auto;
     text-align: right;
     right: 40px;
+}
+
+.second-text {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    right: 295px;
+    z-index: 1;
+}
+
+.coton {
+    background-color: #E44924;
+}
+
+.coton-girl {
+    cursor: pointer;
+    width: 250px;
+    position: absolute;
+    margin: 0 auto;
+    left: 1px;
+    right: 1px;
+    bottom: 0px;
+}
+
+.second-section div:nth-of-type(2).coton-container {
+    background-color: transparent;
+    height: 700px;
+    z-index: 2;
+}
+
+.butterfly {
+    width: 280px;
+    position: absolute;
+    right: 120px;
+    top: 120px
+}
+
+.fifth-h2 {
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+    z-index: 3;
+    margin: 0 auto;
+    left: 1px;
+    right: 1px;
+    text-align: center;
+}
+
+.wings {
+    position: absolute;
+    left: 400px;
+    top: 60px;
+    z-index: 1;
 }

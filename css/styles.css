@@ -10,7 +10,7 @@ body {
 
 .first-section a img.logo {
     width: 8em;
-    padding-left: 30px;
+    padding-left: 40px;
     padding-top: 30px;
 }
 
@@ -530,4 +530,11 @@ button:focus{
     left: 400px;
     top: 60px;
     z-index: 1;
+}
+
+#Layer_2 {
+    width: 70px;
+    right: 40px;
+    top: 30px;
+    position: absolute;
 }

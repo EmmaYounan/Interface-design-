@@ -656,6 +656,7 @@ button:focus svg .st0 {
 .background-coton{
     transition: all 1s;
     background: url(../images/background.png) center center no-repeat;
+    background-size: cover;
 }
 
 footer{

@@ -10,11 +10,10 @@ Een ontwerp maken die een verhaal in stapjes vertelt en die ondersteund is door 
 
 - Kleuren: Pastel kleuren geven een vreedzame en blij gevoel aan het ontwerp. Een felle kleur is gebruikt om de aandacht aan specifieke elementen te geven.
 
-- Afbeeldingen: Afbeeldingen zijn in zwart en wit om een contrast te creëren tussen realiteit en de droomwereld van de kinderen en om het verdriet van de situatie te laten zien.
+- Afbeeldingen: Afbeeldingen zijn in zwart en wit om een contrast te creëren tussen realiteit en de droomwereld van de kinderen.
 
-- Illustraties en animaties: Geanimeerde illustraties bij de afbeeldingen ondersteunen het verhaal en brengen de dromen van de kinderen terug. 
+- Animaties: Geanimeerde illustraties bij de afbeeldingen ondersteunen het verhaal en brengen de dromen van de kinderen terug. 
 
-- Layout: Het artikel wordt in verschillende sections getoond. Om van het artikel een lopende verhaal te maken: wordt begonnen bij het probleem en geëindigd bij de mogelijke oplossingen. 
+- Layout: Het artikel wordt in verschillende sections getoond. Om van het artikel een lopende verhaal te maken: begint bij het probleem en geëindigd bij de oplossingen. 
 
-- Interactie: De tekst is als secondary elementen om meer focus op het visuele verhaal te hebben. Door click en hover interacties komt de tekst samen met de andere elementen in beeld. 
-
+- Interactie: Tekst is als secondary elementen om meer focus op het visuele verhaal te hebben. Door click en hover komt de tekst samen met de andere elementen in beeld. 

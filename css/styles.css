@@ -573,8 +573,11 @@ button:focus svg .st0 {
 
 .wings {
     position: absolute;
-    left: 400px;
-    top: 60px;
+    margin: 0 auto;
+    left: 1px;
+    right: 1px;
+    bottom: 120px;
+    padding-right: 180px;
     z-index: 1;
 }
 

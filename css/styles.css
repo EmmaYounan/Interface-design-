@@ -316,6 +316,14 @@ main section:nth-of-type(1) p {
     transform: rotate(-45deg);
 }
 
+.second-section button:hover:before {
+    background-color: #E44924;
+}
+
+.second-section button:hover:after {
+    background-color: #E44924;
+}
+
 .second-section button.show {
     opacity: 1;
     right: 40px;
@@ -777,4 +785,77 @@ footer p:nth-of-type(2){
 
 .glasses:hover {
     fill: #F9DADF;
+}
+
+.sweater {
+    position: absolute;
+    margin: 0 auto;
+    left: 1px;
+    right: 1px;
+    width: 450px;
+    bottom: 0;
+    pointer-events: none;
+}
+.tag {
+    position: absolute;
+    margin: 0 auto;
+    left: 1px;
+    right: 1px;
+    width: 550px;
+    bottom: 175px;
+    padding-right: 550px;
+    pointer-events: none;
+}
+
+.solutions {
+    background-color: #F9DADF;
+}
+
+.scroll-container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: .5em;
+    margin-top: 220px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-scroll-snap-destination: 0% 0%;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    z-index: 2;
+}
+
+
+.scroll-container p.solutions-text {
+    scroll-snap-align: center;
+    font-size: 30px;
+    line-height: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 600px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.scroll-container article:nth-of-type(1) p.solutions-text {
+
+    padding-left: 13em;
+
+}
+.scroll-container article:nth-of-type(5) p.solutions-text {
+
+    padding-right: 10em;
+
+}
+
+body .scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.number {
+    color: #E44924;
+    font-size: 50px;
+    padding-right: 10px;
 }

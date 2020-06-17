@@ -1,6 +1,6 @@
 Voor ontwerpen-3 heb ik een sub-website van The Guardian gekozen die over kinderarbeid in de Fashion industrie gaat. Hier heb ik voor gekozen omdat ik dit onderwerp belangrijk vind en ik wilde het op een andere manier vertellen dan hoe het in de artikel verteld wordt.  
 
-# Mijn visie 
+# Mijn visie :eye: 
 Een ontwerp maken die een verhaal in stapjes vertelt en die ondersteund is door verschillende geïllustreerde animaties. 
 
 ## Ontwerpkeuzes
